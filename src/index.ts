@@ -36,5 +36,5 @@ app.get("/", (req: Request, res: Response, next: NextFunction) => {
 app.use("/api/v1",BaseRouter)
 
 app.listen(PORT, () => {
-  console.log(`ServerRunning on Port https://betternship-test.onrender.com/`);
+  console.log(`ServerRunning on Port http://localhost:${PORT}`);
 });
