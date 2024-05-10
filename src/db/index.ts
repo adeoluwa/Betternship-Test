@@ -5,7 +5,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 if (!process.env.DB_url) {
-  logger.warning("DB_URL environment variable is not set");
+  // logger.warning("DB_URL environment variable is not set");
+  console.log("DB_URL environment variable is not set")
 }
 
 const uri = process.env.DB_URL;
