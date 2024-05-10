@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./db";
 import BaseRouter from "./routes/index"
-import logger from "./utils/logger";
+// import logger from "./utils/logger";
 import logEndpoints from "./middleware/logEndpoints.middleware";
 
 dotenv.config();
@@ -36,5 +36,5 @@ app.get("/", (req: Request, res: Response, next: NextFunction) => {
 app.use("/api/v1",BaseRouter)
 
 app.listen(PORT, () => {
-  logger.info(`ServerRunning on Port http://localhost:${PORT}`);
+  console.log(`ServerRunning on Port http://localhost:${PORT}`);
 });
