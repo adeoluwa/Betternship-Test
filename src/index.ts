@@ -16,7 +16,7 @@ connectDB();
 const PORT = process.env.PORT || 4001;
 
 const CorsOption = {
-  origin: [`http://localhost:${PORT}`],
+  origin: [`https://betternship-test.onrender.com/`],
   optionalSuccessStatus: 200,
   credentials: true,
 };
@@ -36,5 +36,5 @@ app.get("/", (req: Request, res: Response, next: NextFunction) => {
 app.use("/api/v1",BaseRouter)
 
 app.listen(PORT, () => {
-  console.log(`ServerRunning on Port http://localhost:${PORT}`);
+  console.log(`ServerRunning on Port https://betternship-test.onrender.com/`);
 });
