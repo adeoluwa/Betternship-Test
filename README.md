@@ -41,6 +41,8 @@ There are three (3) script to run the project;
 ### Postman Docs
 
 the post man documentation have been added below:
+
+    Postman Docs: https://documenter.getpostman.com/view/23746019/2sA3JM82K4
     
 
 replace the {{base_url}} with localhost port address on your PC
